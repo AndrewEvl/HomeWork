@@ -17,7 +17,7 @@ public class Task3 {
         rain6 = sc.nextInt();
 
         int sum = rain1 + rain2 + rain3 + rain4 + rain5 + rain6;
-        int mid = (rain1 + rain2 + rain3 + rain4 + rain5 + rain6)/6;
+        double mid = (rain1 + rain2 + rain3 + rain4 + rain5 + rain6)/6;
         int max1 = Math.max (rain1,rain2);
         int max2 = Math.max (rain3,rain4);
         int max3 = Math.max (rain5,rain6);

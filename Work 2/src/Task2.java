@@ -8,20 +8,17 @@ public class Task2 {
         Scanner scn = new Scanner(System.in);
         System.out.println("Введите число Фибоначчи: ");
         int n = scn.nextInt();
-        int a = 1;
-        int b = 1;
-        int fib = 2;
+        int fibo1 = 1;
+        int fibo2 = 1;
+        int fibo = 2;
         int i = 2;
-        System.out.print(a + " " + b);
-        fib = 0;
-        if (fib < n) {
-            while (fib < n) {
-                fib = a + b;
-                a = b;
-                b = fib;
+        System.out.print(fibo1 + " " + fibo2);
+        fibo = 0;
+            while (fibo < n) {
+                fibo = fibo1 + fibo2;
+                fibo1 = fibo2;
+                fibo2 = fibo;
                 i++;
-                System.out.print(" " + fib);
-            }
-        }
+                System.out.print(fibo + ", ");}
     }
 }
